@@ -32,7 +32,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/NobleChicken97/SmartNav.git
+git clone https://github.com/Nitingupta0/ucs503p-202526odd-team-beta.git
 cd SmartNavigator
 
 # Install dependencies for both frontend and backend
