@@ -181,12 +181,6 @@ We welcome contributions! Please see our [Contributing Guide](./docs/CONTRIBUTIN
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Team
-
-- **Lead Developer:** [NobleChicken97](https://github.com/NobleChicken97)
-- **LinkedIn:** [linkedin.com/in/arpangoyal97](https://linkedin.com/in/arpangoyal97/)
-- **Institution:** Thapar Institute of Engineering & Technology
-
 ## 🆘 Support
 
 - 📖 Check the [Documentation](./docs/)
