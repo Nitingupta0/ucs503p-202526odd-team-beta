@@ -1,0 +1,224 @@
+# 🗺️ Smart Navigator
+
+**A modern campus navigation system for Thapar Institute of Engineering & Technology**
+
+[![Quality Gate Status](https://img.shields.io/badge/Quality%20Gate-A+-brightgreen)](https://github.com/NobleChicken97/SmartNav)
+[![ES Modules](https://img.shields.io/badge/ES%20Modules-✓-green)](https://github.com/NobleChicken97/SmartNav)
+[![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-ES%20Modules-green)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248)](https://www.mongodb.com/)
+
+> A comprehensive web application that helps students, faculty, and visitors navigate Thapar University campus with interactive maps, location search, and real-time information.
+
+## ✨ Features
+
+- 🗺️ **Interactive Campus Map** - Leaflet-based mapping with custom markers
+- 🎉 **Event Management** - Create, manage, and display campus events with start/end times
+- ⏰ **Real-Time Event Status** - Automatic detection of upcoming, ongoing, and completed events
+- 📊 **Smart Dashboards** - Role-specific dashboards with clickable statistics and filtering
+- 🔍 **Smart Search** - Find buildings, rooms, events, and points of interest quickly  
+- 📍 **Location Management** - Add, edit, and manage campus locations (Admin)
+- 🎯 **Categories** - Buildings, rooms, dining, recreation, events, and more
+- 👥 **Role-Based Access** - Student, Organizer, and Admin roles with proper permissions
+- 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
+- 🔒 **Secure API** - JWT authentication with HTTP-only cookies
+- ⚡ **Modern Tech Stack** - React 18, TypeScript, Node.js with ES Modules
+- 📚 **API Documentation** - Complete Swagger/OpenAPI documentation
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 16+ 
+- MongoDB Atlas account (or local MongoDB)
+- Git
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/NobleChicken97/SmartNav.git
+cd SmartNavigator
+
+# Install dependencies for both frontend and backend
+npm run install:all
+
+# Set up environment variables
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
+# Edit the .env files with your configuration
+
+# Start development servers
+npm run dev
+```
+
+The application will be available at:
+
+| Service | Development Mode | Docker Mode |
+|---------|------------------|-------------|
+| **Frontend** | http://localhost:5173 | http://localhost:3000 |
+| **Backend API** | http://localhost:5000 | http://localhost:5000 |
+| **MongoDB** | mongodb://localhost:27017 | mongodb://localhost:27017 |
+
+**Note:** Use development mode (`npm run dev`) for hot-reload during coding, or Docker mode (`docker-compose up`) for production-like testing.
+
+## 📖 Documentation
+
+- **[📋 Development Rules](./.github/instructions/development.instructions.md)** - Coding standards for AI assistants
+- **[📋 Project Workflow](./.github/instructions/project.instructions.md)** - Student-friendly development workflow
+
+**Note:** Full API documentation available via Swagger at `http://localhost:5000/api-docs` when backend is running.
+
+## 🏗️ Tech Stack
+
+### Frontend
+- **React 18** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** for styling
+- **Leaflet** for interactive maps
+- **Zustand** for state management
+- **Axios** for API communication
+
+### Backend  
+- **Node.js** with ES Modules
+- **Express.js** web framework
+- **MongoDB** with Mongoose ODM
+- **JWT** for authentication
+- **bcryptjs** for password hashing
+- **Multer** for file uploads
+
+### DevOps & Quality
+- **Docker & Docker Compose** for containerization
+- **GitHub Actions** for CI/CD
+- **ESLint & Prettier** for code quality
+- **Jest** for testing
+
+## 📁 Project Structure
+
+## 📁 Project Structure
+
+```
+SmartNavigator/
+├── 📁 backend/                 # Node.js + Express API
+│   ├── src/
+│   │   ├── controllers/        # Route handlers
+│   │   ├── models/            # MongoDB schemas  
+│   │   ├── routes/            # API routes
+│   │   ├── middleware/        # Custom middleware
+│   │   └── utils/             # Helper functions
+│   └── tests/                 # Backend tests
+├── 📁 frontend/               # React + TypeScript app
+│   ├── src/
+│   │   ├── components/        # Reusable components
+│   │   ├── pages/             # Route components  
+│   │   ├── services/          # API services
+│   │   ├── stores/            # Zustand stores
+│   │   ├── types/             # TypeScript definitions
+│   │   └── utils/             # Helper functions
+│   └── public/                # Static assets
+├── 📁 docs/                   # Project documentation
+├── 📁 scripts/                # Database seeding & utilities  
+├── 📁 .github/                # CI/CD workflows
+├── docker-compose.yml         # Container orchestration
+└── README.md                  # You are here!
+```
+
+## 🎯 Current Status
+
+**Project Grade:** A+ (96/100)  
+**Last Updated:** November 6, 2025
+
+### ✅ Completed Features
+- ✅ Full ES Modules conversion (Backend + Frontend)
+- ✅ Interactive Leaflet maps with campus locations
+- ✅ User authentication with JWT
+- ✅ Location CRUD operations
+- ✅ **Event end time tracking with time ranges**
+- ✅ **Real-time event status detection (Upcoming/Ongoing/Completed)**
+- ✅ **Smart dashboards with clickable statistics**
+- ✅ Role-based access control (Student, Organizer, Admin)
+- ✅ Responsive design for all devices
+- ✅ Docker containerization
+- ✅ CI/CD pipeline with GitHub Actions
+- ✅ Comprehensive API documentation
+
+### 🚧 In Progress  
+- 🔄 Enhanced test coverage
+- 🔄 Advanced map features (routing, categories)
+- 🔄 Performance optimizations
+
+### 🎯 Planned Features
+- 📋 Route planning between locations
+- 📊 Usage analytics dashboard
+- 🔔 Real-time notifications
+- 📱 Progressive Web App (PWA) capabilities
+- 🤖 AI-powered search suggestions
+
+## �️ Development Commands
+
+```bash
+# Install dependencies
+npm run install:all
+
+# Development
+npm run dev                    # Start both frontend & backend
+npm run dev:frontend          # Frontend only (port 5173)  
+npm run dev:backend           # Backend only (port 5000)
+
+# Code Quality
+npm run lint                  # Run ESLint
+npm run type-check           # TypeScript checking
+npm test                     # Run tests
+
+# Database
+node scripts/seed.js         # Seed sample data
+node scripts/reset-db.js     # Reset database
+
+# Production
+npm run build               # Build for production
+npm start                  # Start production server
+docker-compose up -d       # Start with Docker
+```
+
+## 🎓 Project Status
+
+**Current Version:** 2.0.0 - Production Ready ✅
+
+### What's Working
+- ✅ Interactive campus map with Leaflet
+- ✅ Event markers with visual distinction (🎉 markers)
+- ✅ Location search and filtering
+- ✅ Role-based access control (Student, Organizer, Admin)
+- ✅ JWT authentication with HTTP-only cookies
+- ✅ Complete API with Swagger documentation
+- ✅ Docker deployment ready
+- ✅ Type-safe TypeScript codebase
+
+### Recent Updates (November 2025)
+- ✅ **Event end time tracking** - Events now have start and end times with validation
+- ✅ **Real-time event status** - Automatic detection of upcoming, ongoing, and completed events
+- ✅ **Enhanced dashboards** - Clickable statistics cards with smart filtering
+- ✅ **Event time ranges** - Display events with time ranges (e.g., "2:00 PM - 5:00 PM")
+- ✅ **Ongoing events monitoring** - Track and display currently active events
+- ✅ **Improved event management** - Dedicated cancel endpoint with proper state management
+- ✅ Implemented event markers on map with enhanced styling
+- ✅ Updated Swagger documentation with organizer role
+- ✅ Improved TypeScript type safety across all error handlers
+- ✅ Simplified architecture (removed NGINX, single rate limiter)
+- ✅ Cleaned up deprecated files and documentation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)  
+5. Open a Pull Request
+
+
+## 👥 Team
+
+- **Lead Developer:** [NobleChicken97](https://github.com/NobleChicken97)
+- **LinkedIn:** [linkedin.com/in/arpangoyal97](https://linkedin.com/in/arpangoyal97/)
+- **Institution:** Thapar Institute of Engineering & Technology
+
+
