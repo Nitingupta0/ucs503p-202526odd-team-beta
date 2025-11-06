@@ -217,8 +217,8 @@ docker-compose up -d       # Start with Docker
 
 ## 👥 Team
 
-- **Lead Developer:** [NobleChicken97](https://github.com/NobleChicken97)
-- **LinkedIn:** [linkedin.com/in/arpangoyal97](https://linkedin.com/in/arpangoyal97/)
+- **Lead Developer:** https://github.com/Nitingupta0
+- **LinkedIn:** https://www.linkedin.com/in/nitin-gupta-94a636282/
 - **Institution:** Thapar Institute of Engineering & Technology
 
 
