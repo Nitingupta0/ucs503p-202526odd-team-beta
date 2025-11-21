@@ -296,6 +296,6 @@ This project uses Firebase for authentication and database. See **[QUICK_START_F
 
 ## 👥 Team
 
-- **Lead Developer:** [NobleChicken97](https://github.com/NobleChicken97)
-- **LinkedIn:** [linkedin.com/in/arpangoyal97](https://linkedin.com/in/arpangoyal97/)
+- **Lead Developer:** [Nitin Gupta] (https://github.com/Nitingupta0)
+- **LinkedIn:** (https://www.linkedin.com/in/nitin-gupta-94a636282/)
 - **Institution:** Thapar Institute of Engineering & Technology
